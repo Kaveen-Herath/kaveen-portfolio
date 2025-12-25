@@ -125,9 +125,9 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   const socialStates = [
-    { name: "whatsapp", href: "https://wa.me/94767347799", icon: "/assets/images/logos/wa.webp", bg: "#25d366" },
-    { name: "instagram", href: "https://www.instagram.com/__kaveen_herath__/", icon: "/assets/images/logos/ig.webp", bg: "#DD2A7B" },
-    { name: "linkedin", href: "https://www.linkedin.com/in/kaveen-herath/", icon: "/assets/images/logos/linkedin.webp", bg: "#0A66C2" }
+    { name: "whatsapp", href: "https://wa.me/94767347799", icon: "assets/images/logos/wa.webp", bg: "#25d366" },
+    { name: "instagram", href: "https://www.instagram.com/__kaveen_herath__/", icon: "assets/images/logos/ig.webp", bg: "#DD2A7B" },
+    { name: "linkedin", href: "https://www.linkedin.com/in/kaveen-herath/", icon: "assets/images/logos/linkedin.webp", bg: "#0A66C2" }
   ];
 
   let socialIndex = 0;
