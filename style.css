@@ -967,6 +967,18 @@ body {
   text-transform: uppercase;
 }
 
+/* MOBILE FIX */
+@media (max-width: 600px) {
+  .cv-photo-badge {
+    margin-top: 10px;
+    margin-bottom: 30px;     /* extra space so name doesn’t touch tags */
+  }
+
+  .cv-photo-tags {
+    margin-top: 4px;
+  }
+}
+
 /* ---------- GENERIC CARDS ---------- */
 
 .cv-card {
