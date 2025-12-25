@@ -10,7 +10,7 @@ html,
 body {
   width: 100%;
   overflow-x: hidden;
-  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0, 0, 0, 0.76)),url("assets/images/background1.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.589), rgba(0, 0, 0, 0.473)),url("assets/images/background1.webp");
   background-repeat: no-repeat;
   background-size: 110% 110%;   /* bigger than screen so it has room to move */
   background-position: 50% 50%;
@@ -648,6 +648,68 @@ body {
   box-shadow: 0 14px 24px rgba(0, 0, 0, 0.45);
   z-index: 1; /* base layer */
 }
+
+
+/* hide extra posters initially */
+.work-card.poster-extra {
+  display: none;
+}
+
+/* when section has .expanded, show extras */
+.album-block.expanded .work-card.poster-extra {
+  display: block;
+}
+
+/* button styling */
+.posters-toggle-btn {
+  margin: 24px auto 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 24px;
+  border-radius: 999px;
+  border: 1px solid #f6f1e9;
+  background: transparent;
+  color: #f6f1e9;
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+
+.posters-toggle-btn:hover {
+  background: #f6f1e9;
+  color: #050505;
+  transform: translateY(-2px);
+}
+
+/* mobile tweaks */
+@media (max-width: 768px) {
+  .album-block .grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .posters-toggle-btn {
+    width: 100%;
+    max-width: 260px;
+    margin-top: 20px;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .album-block .grid {
+    gap: 12px;
+  }
+
+  .posters-toggle-btn {
+    padding: 9px 18px;
+    font-size: 0.72rem;
+  }
+}
+
 
 .work-card img {
   width: 100%;

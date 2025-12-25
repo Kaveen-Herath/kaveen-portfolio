@@ -235,5 +235,18 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+document.addEventListener('DOMContentLoaded', () => {
+  const postersSection = document.querySelector('.album-block');
+  const toggleBtn = document.getElementById('togglePostersBtn');
 
+  if (!postersSection || !toggleBtn) {
+    console.log('Posters section or toggle button not found');
+    return;
+  }
+
+  toggleBtn.addEventListener('click', () => {
+    const isExpanded = postersSection.classList.toggle('expanded');
+    toggleBtn.textContent = isExpanded ? 'Show less' : 'Show more';
+  });
+});
 
