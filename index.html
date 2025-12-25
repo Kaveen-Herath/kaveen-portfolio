@@ -571,22 +571,22 @@
 <br>
       <div class="grid">
         
-          <div class="artwork-card">
+          <div class="artwork-card yogeshwari">
             <img src="assets/images/ARTWORK/yogeshwari1.webp" alt="Poster 3" loading="lazy">
           </div>
 
-          <div class="artwork-card">
+          <div class="artwork-card yogeshwari">
             <img src="assets/images/ARTWORK/yogeshwari2.webp" alt="Poster 3" loading="lazy">
           </div>
       </div>
 <br>
       <div class="grid">
 
-          <div class="artwork-card">
+          <div class="artwork-card yogeshwari">
             <img src="assets/images/ARTWORK/yogeshwari3.webp" alt="Poster 3" loading="lazy">
           </div>
 
-          <div class="artwork-card">
+          <div class="artwork-card yogeshwari">
             <img src="assets/images/ARTWORK/yogeshwari4.webp" alt="Poster 3" loading="lazy">
           </div>
       </div>
@@ -662,6 +662,23 @@
     <textarea name="message" placeholder="Your feedback" required></textarea>
     <button type="submit">Send Feedback</button>
   </form>
+
+  <div id="thankYouMessage" style="display:none;">Thanks for your feedback!</div>
+
+<script>
+const form = document.getElementById('feedbackForm');
+const thanks = document.getElementById('thankYouMessage');
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const data = new FormData(form);
+  const res = await fetch(form.action, { method: form.method, body: data });
+  if (res.ok) {
+    thanks.style.display = 'block';
+    form.reset();
+  }
+});
+</script>
 </section>
 
 
@@ -683,7 +700,7 @@
 
 <!-- FLOATING SOCIAL BUTTON -->
 
-<a href="https://wa.me/94XXXXXXXXX" target="_blank" rel="noopener" class="social-fab" id="socialFab">
+<a href="https://wa.me/94767347799" target="_blank" rel="noopener" class="social-fab" id="socialFab">
   <img src="assets/images/logos/wa.webp" alt="WhatsApp" id="socialFabIcon" loading="lazy"/>
 </a>
 

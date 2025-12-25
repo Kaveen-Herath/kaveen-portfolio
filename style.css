@@ -678,6 +678,10 @@ body {
   z-index: 1; /* base layer */
 }
 
+.yogeshwari {
+  filter: blur(5px);
+}
+
 .artwork-card img {
   width: 100%;
   display: block;
