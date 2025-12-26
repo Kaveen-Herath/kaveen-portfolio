@@ -250,3 +250,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+
+  document.querySelectorAll('.artwork-card img').forEach(img => {
+    img.addEventListener('contextmenu', e => e.preventDefault());
+  });

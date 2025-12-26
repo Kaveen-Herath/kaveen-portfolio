@@ -741,6 +741,9 @@ body {
 
 .yogeshwari {
   filter: blur(5px);
+  pointer-events: none;          /* no click, no drag */
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 .artwork-card img {
